@@ -459,8 +459,8 @@ function openModal(id) {
     </div>
 
     <div class="modal-section">
-      <div class="modal-section-title">🎬 Full Script</div>
-      ${scriptHTML}
+      <div class="modal-section-title">🎬 Full Script <button class="copy-btn" onclick="copyScript('${s.id}')">📋 Copy for Teleprompter</button></div>
+      <div id="script-${s.id}">${scriptHTML}</div>
     </div>
 
     <div class="modal-section">
@@ -496,6 +496,18 @@ function openModal(id) {
 function closeModal() {
   document.getElementById('modalOverlay').classList.remove('open');
   document.body.style.overflow = '';
+}
+
+function copyScript(scriptId) {
+  const s = scripts.find(x => x.id === scriptId);
+  if (!s) return;
+  const plainText = s.script.map(block => block.text).join('\n\n');
+  const btn = event.target;
+  navigator.clipboard.writeText(plainText).then(() => {
+    btn.textContent = '✅ Copied!';
+    btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = '📋 Copy for Teleprompter'; btn.classList.remove('copied'); }, 2000);
+  });
 }
 
 function copyText(btn, elId) {
