@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CMP Scripts — Kanban</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f0f0f; color: #e0e0e0; padding: 20px; min-height: 100vh; }
+  h1 { font-size: 24px; margin-bottom: 4px; color: #fff; }
+  .subtitle { color: #888; font-size: 14px; margin-bottom: 24px; }
+  .board { display: flex; gap: 16px; overflow-x: auto; padding-bottom: 20px; -webkit-overflow-scrolling: touch; }
+  .column { min-width: 280px; max-width: 300px; flex-shrink: 0; background: #1a1a1a; border-radius: 12px; padding: 16px; min-height: 200px; transition: background 0.2s; }
+  .column.drag-over { background: #222; }
+  .column-header { display: flex; align-items: center; gap: 8px; margin-bottom: 14px; padding-bottom: 10px; border-bottom: 2px solid #333; }
+  .column-header h2 { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
+  .column-header .count { background: #333; color: #aaa; font-size: 12px; padding: 2px 8px; border-radius: 10px; font-weight: 600; min-width: 20px; text-align: center; }
+  .col-new .column-header { border-color: #6366f1; }
+  .col-new .column-header h2 { color: #818cf8; }
+  .col-filmed .column-header { border-color: #f59e0b; }
+  .col-filmed .column-header h2 { color: #fbbf24; }
+  .col-edited .column-header { border-color: #3b82f6; }
+  .col-edited .column-header h2 { color: #60a5fa; }
+  .col-posted .column-header { border-color: #10b981; }
+  .col-posted .column-header h2 { color: #34d399; }
+  .cards { min-height: 60px; }
+  .card { background: #252525; border-radius: 10px; padding: 14px; margin-bottom: 10px; border: 1px solid #333; cursor: grab; transition: transform 0.15s, box-shadow 0.15s, opacity 0.2s; user-select: none; -webkit-user-select: none; touch-action: none; }
+  .card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.4); border-color: #555; }
+  .card:active { cursor: grabbing; }
+  .card.dragging { opacity: 0.4; transform: scale(0.95); }
+  .card.drop-preview { border: 2px dashed #6366f1; background: #1a1a2e; }
+  .card-title { font-size: 14px; font-weight: 600; color: #fff; margin-bottom: 6px; line-height: 1.3; }
+  .card-meta { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; }
+  .tag { font-size: 11px; padding: 2px 8px; border-radius: 6px; font-weight: 600; }
+  .tag-build { background: #2d1f0e; color: #f59e0b; }
+  .tag-system { background: #0e2137; color: #3b82f6; }
+  .tag-business { background: #1a2e1a; color: #10b981; }
+  .tag-hottake { background: #2d0e0e; color: #ef4444; }
+  .tag-signature { background: #1f0e2d; color: #a855f7; }
+  .card-hook { font-size: 12px; color: #999; line-height: 1.4; font-style: italic; }
+  .card-details { font-size: 11px; color: #666; margin-top: 8px; display: flex; justify-content: space-between; }
+  .empty { text-align: center; color: #555; font-size: 13px; padding: 30px 10px; font-style: italic; pointer-events: none; }
+  .project-filter { display: flex; gap: 8px; margin-bottom: 20px; flex-wrap: wrap; }
+  .filter-btn { background: #252525; border: 1px solid #444; color: #ccc; padding: 6px 14px; border-radius: 8px; font-size: 12px; font-weight: 600; cursor: pointer; transition: all 0.15s; }
+  .filter-btn:hover, .filter-btn.active { background: #6366f1; border-color: #6366f1; color: #fff; }
+  .stats { display: flex; gap: 12px; margin-bottom: 20px; flex-wrap: wrap; }
+  .stat { background: #1a1a1a; padding: 12px 20px; border-radius: 10px; text-align: center; min-width: 80px; }
+  .stat-num { font-size: 24px; font-weight: 700; color: #fff; }
+  .stat-label { font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 2px; }
+  .updated { color: #555; font-size: 11px; text-align: right; margin-top: 16px; }
+  .save-indicator { position: fixed; top: 16px; right: 16px; background: #10b981; color: #fff; padding: 8px 16px; border-radius: 8px; font-size: 13px; font-weight: 600; opacity: 0; transition: opacity 0.3s; pointer-events: none; z-index: 100; }
+  .save-indicator.show { opacity: 1; }
+  .drop-zone-hint { border: 2px dashed transparent; border-radius: 8px; padding: 4px; margin: -4px; transition: border-color 0.2s; }
+  .drop-zone-hint.active { border-color: #6366f1; }
+
+  /* Mobile */
+  @media (max-width: 768px) {
+    body { padding: 12px; }
+    h1 { font-size: 20px; }
+    .board { gap: 12px; }
+    .column { min-width: 260px; }
+    .stats { gap: 8px; }
+    .stat { padding: 10px 14px; min-width: 70px; }
+    .stat-num { font-size: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="save-indicator" id="saveIndicator">✓ Saved</div>
+
+<h1>📋 CMP Script Pipeline</h1>
+<p class="subtitle">@brandingwithshota — Drag cards to update status</p>
+
+<div class="project-filter">
+  <button class="filter-btn active" onclick="filterProject('all', this)">All</button>
+  <button class="filter-btn" onclick="filterProject('brandingwithshota', this)">@brandingwithshota</button>
+</div>
+
+<div class="stats">
+  <div class="stat"><div class="stat-num" id="stat-new">0</div><div class="stat-label">New</div></div>
+  <div class="stat"><div class="stat-num" id="stat-filmed">0</div><div class="stat-label">Filmed</div></div>
+  <div class="stat"><div class="stat-num" id="stat-edited">0</div><div class="stat-label">In Edit</div></div>
+  <div class="stat"><div class="stat-num" id="stat-posted">0</div><div class="stat-label">Posted</div></div>
+</div>
+
+<div class="board" id="board"></div>
+
+<div class="updated" id="updatedText">Last updated: —</div>
+
+<script>
+const STORAGE_KEY = 'cmp-kanban-state';
+
+const COLUMNS = [
+  { id: 'new', label: '📝 New Scripts', cls: 'col-new' },
+  { id: 'filmed', label: '🎬 Filmed', cls: 'col-filmed' },
+  { id: 'edited', label: '✂️ In Edit', cls: 'col-edited' },
+  { id: 'posted', label: '✅ Posted', cls: 'col-posted' }
+];
+
+const PILLAR_TAGS = {
+  'Build in Public': { cls: 'tag-build', icon: '🔨' },
+  'The System': { cls: 'tag-system', icon: '🎯' },
+  'The Business Case': { cls: 'tag-business', icon: '💰' },
+  'Hot Takes': { cls: 'tag-hottake', icon: '🔥' },
+  'Signature Series': { cls: 'tag-signature', icon: '✨' }
+};
+
+const DEFAULT_SCRIPTS = [
+  { id: 'b001-01', title: 'Never Paid Myself', project: 'brandingwithshota', pillar: 'Build in Public', hook: "I've built a quarter-million dollar business and I've never paid myself a single dollar.", duration: '45-60s', batch: '001', status: 'new' },
+  { id: 'b001-02', title: '2 Seconds to Hook', project: 'brandingwithshota', pillar: 'The System', hook: "Your hook has 2 seconds to work. And yours isn't working. Here's why.", duration: '50-70s', batch: '001', status: 'new' },
+  { id: 'b001-03', title: 'The Math on Content', project: 'brandingwithshota', pillar: 'The Business Case', hook: 'How much is one new customer worth to your business?', duration: '45-60s', batch: '001', status: 'new' },
+  { id: 'b001-04', title: 'Fire Your ChatGPT Agency', project: 'brandingwithshota', pillar: 'Hot Takes', hook: 'If your social media agency is using ChatGPT to write all your scripts — fire them. Today.', duration: '50-65s', batch: '001', status: 'new' },
+  { id: 'b001-05', title: 'Script This: Plumber', project: 'brandingwithshota', pillar: 'Signature Series', hook: 'Someone told me plumbing is the most boring business to make content for.', duration: '55-75s', batch: '001', status: 'new' }
+];
+
+let scripts = [];
+let currentFilter = 'all';
+let draggedCard = null;
+let draggedId = null;
+
+// Touch drag state
+let touchClone = null;
+let touchStartX = 0;
+let touchStartY = 0;
+let touchDragging = false;
+
+function loadState() {
+  try {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved) {
+      const parsed = JSON.parse(saved);
+      // Merge: keep saved statuses, add any new defaults not in saved
+      const savedMap = {};
+      parsed.scripts.forEach(s => savedMap[s.id] = s);
+      scripts = DEFAULT_SCRIPTS.map(d => savedMap[d.id] ? { ...d, status: savedMap[d.id].status } : { ...d });
+      // Add any saved scripts not in defaults (future batches added manually)
+      parsed.scripts.forEach(s => { if (!scripts.find(x => x.id === s.id)) scripts.push(s); });
+    } else {
+      scripts = [...DEFAULT_SCRIPTS];
+    }
+  } catch(e) {
+    scripts = [...DEFAULT_SCRIPTS];
+  }
+}
+
+function saveState() {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify({ scripts, lastUpdated: new Date().toISOString() }));
+  showSaveIndicator();
+}
+
+function showSaveIndicator() {
+  const el = document.getElementById('saveIndicator');
+  el.classList.add('show');
+  setTimeout(() => el.classList.remove('show'), 1500);
+}
+
+function filterProject(project, btn) {
+  currentFilter = project;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  render();
+}
+
+function getFiltered() {
+  if (currentFilter === 'all') return scripts;
+  return scripts.filter(s => s.project === currentFilter);
+}
+
+function createCard(script) {
+  const tag = PILLAR_TAGS[script.pillar] || { cls: 'tag-system', icon: '📌' };
+  const card = document.createElement('div');
+  card.className = 'card';
+  card.draggable = true;
+  card.dataset.id = script.id;
+  card.innerHTML = `
+    <div class="card-title">${script.title}</div>
+    <div class="card-meta"><span class="tag ${tag.cls}">${tag.icon} ${script.pillar}</span></div>
+    <div class="card-hook">"${script.hook}"</div>
+    <div class="card-details"><span>${script.duration}</span><span>Batch ${script.batch}</span></div>
+  `;
+
+  // Desktop drag
+  card.addEventListener('dragstart', (e) => {
+    draggedId = script.id;
+    draggedCard = card;
+    card.classList.add('dragging');
+    e.dataTransfer.effectAllowed = 'move';
+    e.dataTransfer.setData('text/plain', script.id);
+  });
+  card.addEventListener('dragend', () => {
+    card.classList.remove('dragging');
+    draggedCard = null;
+    draggedId = null;
+    document.querySelectorAll('.column').forEach(c => c.classList.remove('drag-over'));
+  });
+
+  // Touch drag
+  card.addEventListener('touchstart', (e) => {
+    const touch = e.touches[0];
+    touchStartX = touch.clientX;
+    touchStartY = touch.clientY;
+    draggedId = script.id;
+    touchDragging = false;
+  }, { passive: true });
+
+  card.addEventListener('touchmove', (e) => {
+    const touch = e.touches[0];
+    const dx = Math.abs(touch.clientX - touchStartX);
+    const dy = Math.abs(touch.clientY - touchStartY);
+
+    if (!touchDragging && (dx > 10 || dy > 10)) {
+      touchDragging = true;
+      card.classList.add('dragging');
+      touchClone = card.cloneNode(true);
+      touchClone.style.position = 'fixed';
+      touchClone.style.width = card.offsetWidth + 'px';
+      touchClone.style.pointerEvents = 'none';
+      touchClone.style.zIndex = '999';
+      touchClone.style.opacity = '0.85';
+      touchClone.style.transform = 'rotate(2deg) scale(1.03)';
+      document.body.appendChild(touchClone);
+    }
+
+    if (touchDragging) {
+      e.preventDefault();
+      touchClone.style.left = (touch.clientX - card.offsetWidth/2) + 'px';
+      touchClone.style.top = (touch.clientY - 30) + 'px';
+
+      // Highlight column under finger
+      document.querySelectorAll('.column').forEach(col => {
+        const r = col.getBoundingClientRect();
+        if (touch.clientX >= r.left && touch.clientX <= r.right && touch.clientY >= r.top && touch.clientY <= r.bottom) {
+          col.classList.add('drag-over');
+        } else {
+          col.classList.remove('drag-over');
+        }
+      });
+    }
+  }, { passive: false });
+
+  card.addEventListener('touchend', (e) => {
+    if (touchDragging && draggedId) {
+      const touch = e.changedTouches[0];
+      document.querySelectorAll('.column').forEach(col => {
+        const r = col.getBoundingClientRect();
+        if (touch.clientX >= r.left && touch.clientX <= r.right && touch.clientY >= r.top && touch.clientY <= r.bottom) {
+          moveScript(draggedId, col.dataset.status);
+        }
+        col.classList.remove('drag-over');
+      });
+    }
+    if (touchClone) { touchClone.remove(); touchClone = null; }
+    card.classList.remove('dragging');
+    touchDragging = false;
+    draggedId = null;
+  });
+
+  return card;
+}
+
+function moveScript(id, newStatus) {
+  const script = scripts.find(s => s.id === id);
+  if (script && script.status !== newStatus) {
+    script.status = newStatus;
+    saveState();
+    render();
+  }
+}
+
+function render() {
+  const board = document.getElementById('board');
+  board.innerHTML = '';
+  const filtered = getFiltered();
+
+  COLUMNS.forEach(col => {
+    const colEl = document.createElement('div');
+    colEl.className = `column ${col.cls}`;
+    colEl.dataset.status = col.id;
+
+    const colScripts = filtered.filter(s => s.status === col.id);
+
+    colEl.innerHTML = `<div class="column-header"><h2>${col.label}</h2><span class="count">${colScripts.length}</span></div>`;
+
+    const cardsContainer = document.createElement('div');
+    cardsContainer.className = 'cards';
+
+    if (colScripts.length === 0) {
+      cardsContainer.innerHTML = '<div class="empty">Drag scripts here</div>';
+    } else {
+      colScripts.forEach(s => cardsContainer.appendChild(createCard(s)));
+    }
+
+    colEl.appendChild(cardsContainer);
+
+    // Desktop drop
+    colEl.addEventListener('dragover', (e) => { e.preventDefault(); e.dataTransfer.dropEffect = 'move'; colEl.classList.add('drag-over'); });
+    colEl.addEventListener('dragleave', () => colEl.classList.remove('drag-over'));
+    colEl.addEventListener('drop', (e) => {
+      e.preventDefault();
+      colEl.classList.remove('drag-over');
+      const id = e.dataTransfer.getData('text/plain');
+      if (id) moveScript(id, col.id);
+    });
+
+    board.appendChild(colEl);
+  });
+
+  // Update stats
+  COLUMNS.forEach(col => {
+    const el = document.getElementById('stat-' + col.id);
+    if (el) el.textContent = filtered.filter(s => s.status === col.id).length;
+  });
+
+  document.getElementById('updatedText').textContent = 'Last updated: ' + new Date().toLocaleString();
+}
+
+// Init
+loadState();
+render();
+</script>
+</body>
+</html>
