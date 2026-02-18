@@ -16,7 +16,9 @@
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: linear-gradient(135deg, #0a0a0a, #1a0a2e, #0d0d0d, #15062b, #0a0a0a, #1e0938); background-size: 400% 400%; animation: gradientMove 20s ease infinite; color: #e0e0e0; padding: 20px; min-height: 100vh; }
   h1 { font-size: 24px; margin-bottom: 4px; color: #fff; }
   .subtitle { color: #888; font-size: 14px; margin-bottom: 24px; }
-  .board { display: flex; gap: 16px; overflow-x: auto; padding-bottom: 20px; -webkit-overflow-scrolling: touch; }
+  .board { gap: 16px; overflow-x: auto; padding-bottom: 20px; -webkit-overflow-scrolling: touch; }
+  .board-view { display: flex; }
+  .board-view.hidden { display: none !important; }
   .column { min-width: 280px; max-width: 300px; flex-shrink: 0; background: rgba(20, 16, 30, 0.85); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(100, 60, 180, 0.1); border-radius: 12px; padding: 16px; min-height: 200px; transition: background 0.2s; }
   .column.drag-over { background: rgba(40, 25, 60, 0.9); }
   .column-header { display: flex; align-items: center; gap: 8px; margin-bottom: 14px; padding-bottom: 10px; border-bottom: 2px solid #333; }
@@ -80,6 +82,30 @@
   .change-down { color: #ef4444; }
   .change-flat { color: #666; }
 
+  /* View Toggle */
+  .view-toggle { display: flex; gap: 4px; background: rgba(20,16,30,0.85); border-radius: 10px; padding: 4px; margin-bottom: 16px; width: fit-content; }
+  .view-btn { padding: 8px 18px; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer; border: none; background: transparent; color: #666; transition: all 0.2s; }
+  .view-btn.active { background: #818cf8; color: #fff; }
+  .view-btn:hover:not(.active) { color: #aaa; }
+
+  /* Calendar */
+  .calendar { display: none; }
+  .calendar.visible { display: block; }
+  .cal-grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px; }
+  .cal-header { font-size: 12px; font-weight: 700; color: #555; text-transform: uppercase; letter-spacing: 1px; text-align: center; padding: 8px 0; }
+  .cal-day { background: rgba(20,16,30,0.85); border: 1px solid rgba(100,60,180,0.1); border-radius: 10px; min-height: 120px; padding: 10px; transition: all 0.2s; }
+  .cal-day.today { border-color: #818cf8; box-shadow: 0 0 15px rgba(129,140,248,0.1); }
+  .cal-day.has-content { border-color: rgba(100,60,180,0.25); }
+  .cal-day-num { font-size: 13px; font-weight: 700; color: #555; margin-bottom: 6px; }
+  .cal-day.today .cal-day-num { color: #818cf8; }
+  .cal-event { font-size: 11px; padding: 4px 8px; border-radius: 6px; margin-bottom: 4px; font-weight: 600; cursor: pointer; transition: all 0.15s; }
+  .cal-event:hover { transform: translateY(-1px); }
+  .cal-event.reel { background: rgba(129,140,248,0.15); color: #818cf8; }
+  .cal-event.carousel { background: rgba(168,85,247,0.15); color: #a855f7; }
+  .cal-event.posted { opacity: 0.5; text-decoration: line-through; }
+  .cal-empty { display: none; }
+  .cal-month-nav { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; }
+  .cal-month-title { font-size: 18px; font-weight: 700; color: #fff; }
   /* Modal */
   .modal-overlay { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.7); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); z-index: 200; justify-content: center; align-items: flex-start; padding: 40px 20px; overflow-y: auto; }
   .modal-overlay.open { display: flex; }
@@ -141,7 +167,13 @@
   <div class="stat"><div class="stat-num" id="stat-posted">0</div><div class="stat-label">Posted</div></div>
 </div>
 
-<div class="board" id="board"></div>
+<div class="view-toggle">
+  <button class="view-btn active" onclick="switchView('board')">📋 Board</button>
+  <button class="view-btn" onclick="switchView('calendar')">📅 Calendar</button>
+</div>
+
+<div class="board board-view" id="board"></div>
+<div class="calendar" id="calendar"></div>
 <div class="updated" id="updatedText"></div>
 
 <script>
@@ -649,6 +681,83 @@ function render() {
     if (el) el.textContent = filtered.filter(s => s.status === col.id).length;
   });
   document.getElementById('updatedText').textContent = 'Last updated: ' + new Date().toLocaleString();
+}
+
+// === CALENDAR VIEW ===
+const SCHEDULE_KEY = 'cmp-content-schedule';
+
+function getSchedule() {
+  const saved = localStorage.getItem(SCHEDULE_KEY);
+  if (saved) return JSON.parse(saved);
+  // Default: start today, reel+carousel alternating
+  const today = new Date();
+  today.setHours(0,0,0,0);
+  const order = ['b001-01','b001-04','b001-03','b001-02','b001-05'];
+  const schedule = [];
+  let dayOffset = 0;
+  order.forEach(id => {
+    const d1 = new Date(today); d1.setDate(d1.getDate() + dayOffset);
+    schedule.push({ scriptId: id, date: d1.toISOString().split('T')[0], type: 'reel' });
+    const d2 = new Date(today); d2.setDate(d2.getDate() + dayOffset + 1);
+    schedule.push({ scriptId: id, date: d2.toISOString().split('T')[0], type: 'carousel' });
+    dayOffset += 2;
+  });
+  localStorage.setItem(SCHEDULE_KEY, JSON.stringify(schedule));
+  return schedule;
+}
+
+function switchView(view) {
+  document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
+  document.querySelector(`.view-btn[onclick*="${view}"]`).classList.add('active');
+  document.getElementById('board').classList.toggle('hidden', view !== 'board');
+  document.getElementById('calendar').classList.toggle('visible', view === 'calendar');
+  if (view === 'calendar') renderCalendar();
+}
+
+function renderCalendar() {
+  const cal = document.getElementById('calendar');
+  const schedule = getSchedule();
+  const today = new Date(); today.setHours(0,0,0,0);
+  
+  // Get the month to show (month of first scheduled item, or current)
+  const firstDate = schedule.length ? new Date(schedule[0].date) : today;
+  const year = firstDate.getFullYear();
+  const month = firstDate.getMonth();
+  const monthName = firstDate.toLocaleString('default', { month: 'long', year: 'numeric' });
+  
+  const firstDay = new Date(year, month, 1).getDay();
+  const daysInMonth = new Date(year, month + 1, 0).getDate();
+  
+  const days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+  let html = `<div class="cal-month-nav"><div class="cal-month-title">📅 ${monthName}</div></div>`;
+  html += '<div class="cal-grid">';
+  days.forEach(d => { html += `<div class="cal-header">${d}</div>`; });
+  
+  // Empty cells before first day
+  for (let i = 0; i < firstDay; i++) html += '<div class="cal-empty"></div>';
+  
+  for (let day = 1; day <= daysInMonth; day++) {
+    const dateStr = `${year}-${String(month+1).padStart(2,'0')}-${String(day).padStart(2,'0')}`;
+    const isToday = dateStr === today.toISOString().split('T')[0];
+    const events = schedule.filter(e => e.date === dateStr);
+    const hasContent = events.length > 0;
+    
+    html += `<div class="cal-day${isToday ? ' today' : ''}${hasContent ? ' has-content' : ''}">`;
+    html += `<div class="cal-day-num">${day}</div>`;
+    events.forEach(e => {
+      const s = scripts.find(x => x.id === e.scriptId);
+      if (!s) return;
+      const isPosted = s.status === 'posted';
+      const tag = pillarTags[s.pillar] || { icon: '📝', cls: 'tag-system' };
+      html += `<div class="cal-event ${e.type}${isPosted ? ' posted' : ''}" onclick="openModal('${s.id}')">`;
+      html += `${e.type === 'reel' ? '🎬' : '🖼️'} ${s.title}`;
+      html += '</div>';
+    });
+    html += '</div>';
+  }
+  
+  html += '</div>';
+  cal.innerHTML = html;
 }
 
 loadState();
