@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-20T04:00:00-05:00",
+  "lastUpdated": "2026-02-20T06:15:00-05:00",
   "scripts": [
     {
       "id": "b001-01",
@@ -65,7 +65,25 @@
       "duration": "55-75 sec",
       "batch": "002",
       "status": "new",
-      "postUrl": null
+      "postUrl": null,
+      "topic": "Showing how to script fear-based med spa content that sells without selling — the client story format.",
+      "script": [
+        { "label": "HOOK", "type": "hook", "text": "Med spas spend $5,000 a month on ads. I'm about to write them a script for free that'll outperform all of it." },
+        { "label": "BODY 1", "type": "body", "text": "Here's what every med spa gets wrong with their content. They post before-and-afters with zero context. No story, no emotion, just a side-by-side pic and 'book now.' That doesn't make anyone feel anything." },
+        { "label": "REHOOK", "type": "rehook", "text": "Here's what actually works—" },
+        { "label": "BODY 2", "type": "body", "text": "Hook: 'She almost canceled her appointment because she was terrified of looking fake.'\n\nBody: 'This is Sarah. She wanted Botox for a year but kept scrolling horror stories online. Frozen faces. People who don't look like themselves anymore. So she almost didn't come in. But here's what we told her — good Botox doesn't make you look different. It makes you look like you slept 8 hours. Watch her reaction seeing herself for the first time.'\n\nThen you show the reveal. That's it. That's the whole video." },
+        { "label": "BODY 3", "type": "body", "text": "You're not selling Botox. You're selling the relief that it won't ruin your face. Every med spa client has that fear. Address the fear, show the outcome, let the emotion do the selling." },
+        { "label": "OUTRO", "type": "body", "text": "If you run a med spa and your content isn't doing this — your content isn't working. Drop your business in the comments, I'll tell you what to post." }
+      ],
+      "value": "Reveals the psychology behind med spa buying decisions — fear vs. desire. Shows the exact content format that works.",
+      "cta": "What treatment would YOU want to see scripted? 👇",
+      "caption": "Med spas are spending $5K/month on ads.\n\nI wrote them a script for free that'll outperform all of it.\n\nMost med spa content is before/afters with zero emotion.\nNo story. Just a photo and 'book now.'\n\nThat doesn't sell.\n\nHere's what does:\n\nAddress the fear.\nShow the outcome.\nLet the emotion close it.\n\nDrop your business below — I'll tell you what to post. 👇",
+      "hashtags": "#medspa #medspabusiness #botox #aesthetics #socialmediamarketing #contentcreation #brandingwithshota #scriptthis #smallbusiness #marketingtips",
+      "visuals": [
+        { "icon": "🎬", "text": "Open confident, slight smirk — you're about to prove a point" },
+        { "icon": "📱", "text": "When delivering the embedded script, shift energy — become the med spa's voice" },
+        { "icon": "💉", "text": "Text overlay: '$5,000 ads vs. free script' at hook for visual contrast" }
+      ]
     },
     {
       "id": "b002-07",
@@ -76,7 +94,25 @@
       "duration": "55-75 sec",
       "batch": "002",
       "status": "new",
-      "postUrl": null
+      "postUrl": null,
+      "topic": "Scripting a PI attorney using the 'expose the threat' format — building trust by giving away insider knowledge.",
+      "script": [
+        { "label": "HOOK", "type": "hook", "text": "Lawyers think they can't go viral. I wrote a personal injury attorney a script in under a minute that would get more leads than a billboard." },
+        { "label": "BODY 1", "type": "body", "text": "Every PI attorney's content is the same. Guy in a suit pointing at text on screen: 'Were you injured in a car accident? Call us today.' Nobody stops for that. You know why? Because it sounds like every other lawyer. And people don't trust lawyers — that's the real problem you need to solve first." },
+        { "label": "REHOOK", "type": "rehook", "text": "So here's the script—" },
+        { "label": "BODY 2", "type": "body", "text": "Hook: 'The insurance company is hoping you don't watch this video.'\n\nBody: 'If you just got in a car accident, the insurance adjuster is going to call you within 48 hours. They're going to sound really nice. They're going to ask how you're feeling. And then they're going to offer you a check. Do NOT take it. That first offer? It's designed to be as low as possible before you realize how bad your injuries actually are. Here's exactly what to say when they call—'\n\nThen you give them the script. Word for word. Free." },
+        { "label": "BODY 3", "type": "body", "text": "You're not saying 'hire me.' You're giving them something they desperately need in a moment of panic. That builds more trust than any billboard ever could. And when they DO need a lawyer? You're the one who helped them when nobody else did." },
+        { "label": "OUTRO", "type": "body", "text": "If you're an attorney and your content is just you pointing at text — we need to talk. Drop your practice area below and I'll script it." }
+      ],
+      "value": "Shows how attorneys can build trust through radical transparency — giving away insider knowledge builds authority faster than any ad.",
+      "cta": "What type of lawyer should I script next? ⚖️👇",
+      "caption": "Lawyers think they can't go viral.\n\nI wrote a personal injury attorney a script that gets more leads than a billboard.\n\nMost attorney content: guy in a suit, pointing at text, 'call us today.'\n\nNobody stops for that.\n\nHere's what actually works:\n\nGive people something they desperately need — before they need you.\n\nThat's the content strategy.\n\nDrop your practice area below — I'll script it. ⚖️",
+      "hashtags": "#attorney #lawyer #personalinjury #lawmarketing #socialmediamarketing #contentcreation #brandingwithshota #scriptthis #legalmarketing #contentmarketing",
+      "visuals": [
+        { "icon": "⚖️", "text": "Direct, intense energy at camera — you're making a bold claim" },
+        { "icon": "📱", "text": "When delivering the embedded script, shift energy to match the urgency of the warning" },
+        { "icon": "📋", "text": "Text overlay: 'More leads than a billboard' at hook" }
+      ]
     },
     {
       "id": "b002-08",
@@ -87,7 +123,25 @@
       "duration": "60-80 sec",
       "batch": "002",
       "status": "new",
-      "postUrl": null
+      "postUrl": null,
+      "topic": "Giving away the 5-line fill-in-the-blank script template — the highest save-bait content possible.",
+      "script": [
+        { "label": "HOOK", "type": "hook", "text": "I'm about to give you the exact script template I use for every single client. Screenshot this." },
+        { "label": "BODY 1", "type": "body", "text": "Every viral business video follows the same structure. It doesn't matter if you're a dentist, a roofer, or a fitness coach. The framework is the same. And most people overcomplicate it." },
+        { "label": "REHOOK", "type": "rehook", "text": "Here's the template. Ready?" },
+        { "label": "BODY 2", "type": "body", "text": "Line one — the hook: '[Your customer's biggest fear] is costing you [dollar amount or consequence].'\n\nLine two — the problem: 'Most [type of business] try to fix this by [common wrong approach]. But that actually makes it worse because [reason].'\n\nLine three — the solution: 'Here's what actually works: [your unique approach in one sentence].'\n\nLine four — the proof: 'We did this for [client type] and [specific result with a number].'\n\nLine five — the CTA: 'If you want the same thing, [simple next step].'\n\nThat's it. Five lines. Fill in the blanks. You have a script." },
+        { "label": "BODY 3", "type": "body", "text": "This template works because it follows how people actually make decisions. Fear, problem, solution, proof, action. In that order. Don't rearrange it. Don't add fluff. Just fill in the blanks and hit record." },
+        { "label": "OUTRO", "type": "body", "text": "Save this. Use it. If it works — and it will — come back and tell me." }
+      ],
+      "value": "Gives away the actual tool — the fill-in-the-blank script framework used for every CMP client. Highest save potential of any content we've made.",
+      "cta": "Save 🔖 + tag someone who needs this",
+      "caption": "The exact script template I use for every client.\n\nFill in the blanks. Hit record.\n\nLine 1 — Hook: [Fear] is costing you [consequence]\nLine 2 — Problem: Most [biz type] try [wrong approach]...\nLine 3 — Solution: Here's what actually works: [your method]\nLine 4 — Proof: We did this for [client] and [result]\nLine 5 — CTA: If you want this, [next step]\n\nThat's it. 5 lines.\n\nSave this and use it this week. 🔖",
+      "hashtags": "#contentcreation #scripttemplate #socialmediamarketing #reelstips #brandingwithshota #smallbusiness #contentcreator #marketingtips #businessgrowth #instagramreels",
+      "visuals": [
+        { "icon": "📋", "text": "NEEDS text overlays — each line appears on screen as he says it. This is the most important visual element." },
+        { "icon": "✍️", "text": "Generous, teaching energy — you're literally giving away the playbook" },
+        { "icon": "💾", "text": "End with 'Save this' while pointing at screen — direct prompt to save" }
+      ]
     },
     {
       "id": "b002-09",
@@ -98,7 +152,25 @@
       "duration": "45-60 sec",
       "batch": "002",
       "status": "new",
-      "postUrl": null
+      "postUrl": null,
+      "topic": "Diagnosing the most common content strategy mistake — making content about yourself instead of your customer's fear.",
+      "script": [
+        { "label": "HOOK", "type": "hook", "text": "You're posting consistently, getting decent views, but no one's reaching out. Here's why." },
+        { "label": "BODY 1", "type": "body", "text": "Your content is entertaining but it doesn't position you as the solution to a problem. You've got attention but no direction. People watch, they like, they move on. They never think 'I should hire this person.'" },
+        { "label": "REHOOK", "type": "rehook", "text": "And it comes down to one missing piece—" },
+        { "label": "BODY 2", "type": "body", "text": "Every piece of content needs to answer one question for the viewer: 'What do I do next?' Not with a 'link in bio' or 'DM me.' With value so specific that they think 'this person clearly knows my problem better than I do.'\n\nWhen a roofer posts 'We do great roofs!' that's nice. When a roofer posts 'Your roof is leaking in a spot you can't see — here's how to check in 30 seconds' — now they're the expert. Now there's a reason to call THEM." },
+        { "label": "BODY 3", "type": "body", "text": "Stop making content about what you do. Start making content about what your customer is afraid of. That's the shift." },
+        { "label": "OUTRO", "type": "body", "text": "If you're posting and not getting leads — the content isn't broken. The strategy is." }
+      ],
+      "value": "Diagnoses the exact frustration most business owners feel — posting without results. Names the real cause and gives the fix in one sentence.",
+      "cta": "What's your business? I'll tell you what to post 👇",
+      "caption": "You're posting. Getting views. Nobody's reaching out.\n\nHere's the actual problem:\n\nYour content is entertaining. It's not positioning.\n\nPeople watch, they like, they scroll.\nThey never think 'I need to hire this person.'\n\nThe fix:\n\nStop making content about what YOU do.\nStart making content about what your customer is AFRAID of.\n\nThat one shift changes everything.\n\nWhat's your business? Tell me below — I'll tell you what to post. 👇",
+      "hashtags": "#contentmarketing #socialmediatips #brandingwithshota #contentcreator #smallbusiness #businessgrowth #instagrammarketing #reelsstrategy #marketingtips #contentcreation",
+      "visuals": [
+        { "icon": "🎯", "text": "Calm, diagnostic energy — you're identifying a problem they've felt but couldn't name" },
+        { "icon": "📱", "text": "Text overlay on roofer example: 'We do great roofs' ❌ vs. 'Leak you can't see' ✅" },
+        { "icon": "🔄", "text": "End with the principle on screen: 'Content about THEIR fear → not YOUR service'" }
+      ]
     },
     {
       "id": "b002-10",
@@ -109,7 +181,25 @@
       "duration": "60-80 sec",
       "batch": "002",
       "status": "new",
-      "postUrl": null
+      "postUrl": null,
+      "topic": "Interactive challenge — script a business live on camera using the CMP framework. Drives comment engagement.",
+      "script": [
+        { "label": "HOOK", "type": "hook", "text": "Comment your business and I'll write you a viral script in 60 seconds. Let's go." },
+        { "label": "BODY 1", "type": "body", "text": "Alright — someone said they're a personal trainer. Let's go.\n\nMost fitness content is 'here's a workout.' Cool. Everyone does that. Nobody hires a trainer because of a workout video. They hire because they're STUCK." },
+        { "label": "REHOOK", "type": "rehook", "text": "Here's the script—" },
+        { "label": "BODY 2", "type": "body", "text": "Hook: 'You've been working out for 6 months and you look exactly the same. Here's what's actually wrong.'\n\nBody: 'It's not your effort. You're showing up, you're sweating, you're sore the next day. The problem is your program has no structure. You're doing random workouts from Instagram and expecting a specific result. That's like driving without a GPS and wondering why you're lost. Here's the 3 things you need to fix this week—'\n\nThen you give three specific, actionable tips. Not generic. Specific." },
+        { "label": "BODY 3", "type": "body", "text": "See what I did? I didn't start with the solution. I started with the frustration. Because that's what makes someone stop scrolling. They see their own problem reflected back at them. THEN they're ready to hear the answer." },
+        { "label": "OUTRO", "type": "body", "text": "Drop your business in the comments. I'll script the next one live." }
+      ],
+      "value": "Interactive format that drives massive comment engagement — turns viewers into participants and proves scripting ability live.",
+      "cta": "Drop your business 👇 I'll script it",
+      "caption": "Comment your business — I'll write you a viral script in 60 seconds.\n\nI picked: Personal Trainer.\n\nFitness content mistake: showing workouts.\nNobody hires a trainer for a workout video.\nThey hire because they're STUCK.\n\nSo you start with the frustration.\nNot the solution.\n\nThat's the shift that changes everything.\n\nDrop your business below — I'll script the next one. 👇",
+      "hashtags": "#scriptthis #contentcreation #brandingwithshota #socialmediamarketing #personaltrainer #smallbusiness #reelsstrategy #marketingtips #contentcreator #businessgrowth",
+      "visuals": [
+        { "icon": "⚡", "text": "Playful, fast energy — this is a challenge, not a lecture" },
+        { "icon": "📱", "text": "Pretend to read a comment on phone before scripting — adds authenticity" },
+        { "icon": "⏱️", "text": "Optional: countdown timer graphic showing '60 seconds' at the start" }
+      ]
     },
     {
       "id": "b003-11",
@@ -120,7 +210,25 @@
       "duration": "50-65 sec",
       "batch": "003",
       "status": "new",
-      "postUrl": null
+      "postUrl": null,
+      "topic": "Exposing vanity metrics (views) vs. conversion metrics (saves, shares) — the real scorecard for business content.",
+      "script": [
+        { "label": "HOOK", "type": "hook", "text": "If your content is getting 10,000 views and you still have no clients — it's not the algorithm. You're measuring the wrong thing." },
+        { "label": "BODY 1", "type": "body", "text": "You're watching views go up. Followers ticking. Telling yourself it's working. But your DMs are empty. Your phone isn't ringing. You're measuring vanity metrics. And vanity metrics pay nobody's bills." },
+        { "label": "REHOOK", "type": "rehook", "text": "Here's the thing most content coaches will never say to your face..." },
+        { "label": "BODY 2", "type": "body", "text": "Views are the audience's glance. Saves are their receipt. Shares are their referral. Those three — saves, shares, comments asking questions — that's your actual conversion funnel.\n\nA post with 200 views and 4 saves will get you more clients than a post with 10K views and zero saves. I'd put money on it. Because saves mean: I need this. Shares mean: my friend needs this too. That's buyer behavior." },
+        { "label": "BODY 3", "type": "body", "text": "Stop asking how many people saw it. Start asking: did it make someone stop, save it, and think 'I need this person?' That is the metric that matters." },
+        { "label": "OUTRO", "type": "body", "text": "If you're posting content without tracking saves and shares — start today. That's your real scorecard. Everything else is noise." }
+      ],
+      "value": "Reframes how service business owners measure content success — shifts focus from vanity metrics to conversion indicators.",
+      "cta": "Track saves. Not views.",
+      "caption": "Stop chasing views. Start tracking what actually drives clients. 📊\n\nIf your content isn't getting saves and shares, it's not converting — no matter what the view count says.\n\nViews = glance\nSaves = receipt\nShares = referral\n\nThat's your real funnel.\n\nDrop a 🔖 if you needed to hear this.",
+      "hashtags": "#socialmediamarketing #contentcreator #instagramgrowth #smallbusinessmarketing #contentcreation #brandingwithshota #contentmarketing #socialmediatips #businessgrowth #marketingstrategy",
+      "visuals": [
+        { "icon": "📊", "text": "Shota tight to camera, eye contact. Text overlay at hook: 'Views ≠ Clients.'" },
+        { "icon": "📱", "text": "Mid-script: quick B-roll cut to analytics screen showing high views / low saves" },
+        { "icon": "✂️", "text": "Return to Shota for close. Clean, sharp cuts. No music until outro." }
+      ]
     },
     {
       "id": "b003-12",
@@ -131,18 +239,54 @@
       "duration": "55-70 sec",
       "batch": "003",
       "status": "new",
-      "postUrl": null
+      "postUrl": null,
+      "topic": "Busting the follower count myth — targeted, specific content beats broad audiences every time.",
+      "script": [
+        { "label": "HOOK", "type": "hook", "text": "I know creators with 20,000 followers who can't get a client. And a business with 200 followers that's fully booked. Here's the difference." },
+        { "label": "BODY 1", "type": "body", "text": "We've been sold a lie. That growth equals revenue. That follower count is the scoreboard. So business owners spend months — sometimes years — chasing a number. While their competitors with a fraction of the following are booking clients every single week." },
+        { "label": "REHOOK", "type": "rehook", "text": "Here's the thing..." },
+        { "label": "BODY 2", "type": "body", "text": "Followers are vanity. Trust is currency. The 200-follower account? Every post speaks to one person with one problem. The audience is small — but it's the right audience. The 20K account? Broad. Generic. Built for the algorithm, not the buyer. There's a difference between a big crowd and the right room. You don't need to go viral. You need to be undeniable to the right 200 people." },
+        { "label": "BODY 3", "type": "body", "text": "Build content for your buyer. Not for the algorithm. Because the algorithm doesn't pay your rent. Your clients do." },
+        { "label": "OUTRO", "type": "body", "text": "If you run a business — your goal is never 'go viral.' Your goal is 'book clients.' Those are completely different content strategies. And I build the second one." }
+      ],
+      "value": "Gives permission to stop chasing follower count. Reframes the goal from virality to specificity. Massive relief factor for small business owners.",
+      "cta": "Build for your buyer. Not the algorithm.",
+      "caption": "I've watched businesses with 200 followers outperform accounts with 20K.\n\nNot because of luck. Because they understood one thing:\n\nYour follower count is not your scorecard. Your booked calendar is. 💼\n\nWhat's your actual goal with content right now? Drop it below — I read every comment.",
+      "hashtags": "#buildinpublic #smallbusiness #contentmarketing #businessgrowth #brandingwithshota #socialmediatips #instagramforbusiness #personalbranding #entrepreneurship #socialmediagrowth",
+      "visuals": [
+        { "icon": "🚶", "text": "Shota walking and talking — movement adds energy and authenticity (BiP feel)" },
+        { "icon": "📱", "text": "Optional: quick cut to phone showing a small follower count vs. a full booking calendar" },
+        { "icon": "🎤", "text": "Candid, no teleprompter energy. Natural lighting preferred." }
+      ]
     },
     {
       "id": "b003-13",
-      "title": "\"Posting Consistently\" Is the Worst Advice on the Internet",
+      "title": "Posting Consistently Is the Worst Advice",
       "project": "brandingwithshota",
       "pillar": "Hot Takes",
       "hook": "Posting consistently is the worst advice anyone ever gave a business owner. And every marketing guru says it.",
       "duration": "45-60 sec",
       "batch": "003",
       "status": "new",
-      "postUrl": null
+      "postUrl": null,
+      "topic": "Hot take — quality over quantity. One extraordinary post beats 30 mediocre ones.",
+      "script": [
+        { "label": "HOOK", "type": "hook", "text": "Posting consistently is the worst advice anyone ever gave a business owner. And every marketing guru says it." },
+        { "label": "BODY 1", "type": "body", "text": "Post every day. Stay consistent. Show up even when you don't feel like it. You've heard it. Most people follow it. And most people are posting garbage on a schedule — wondering why nothing's working. Consistency without strategy is just noise with a calendar." },
+        { "label": "REHOOK", "type": "rehook", "text": "Here's the thing..." },
+        { "label": "BODY 2", "type": "body", "text": "One extraordinary post will outperform thirty mediocre ones. Every single time. One video that stops the scroll — says something nobody else has said — speaks directly to your buyer — that's worth more than a month of daily posts. The algorithm doesn't reward frequency. It rewards engagement. And engagement follows quality, not quantity." },
+        { "label": "BODY 3", "type": "body", "text": "Don't post more. Post better. Even if that means once a week. Make that one post so good it earns saves. Shares. DMs. Clients. Because garbage on a schedule is still garbage." },
+        { "label": "OUTRO", "type": "body", "text": "So before you stress about posting every day — ask yourself one question: Is my content actually good?" }
+      ],
+      "value": "Gives exhausted business owners permission to slow down and focus on quality. Validates what they already suspect — frequency isn't the answer.",
+      "cta": "Post better. Not more.",
+      "caption": "Hot take: 'Post consistently' has ruined more small businesses than it's helped.\n\nOne great post > 30 average ones.\n\nFight me in the comments. ⬇️",
+      "hashtags": "#hottake #socialmediamarketing #contentcreation #marketingtips #brandingwithshota #smallbusinessmarketing #entrepreneurmindset #socialmediatips #contentcreator #reels",
+      "visuals": [
+        { "icon": "🎯", "text": "Shota slightly leaned in toward camera — confrontational, confident energy" },
+        { "icon": "📋", "text": "Bold graphic text overlay at hook. Fast, punchy cuts for body." },
+        { "icon": "🎤", "text": "Text callout on screen: 'Consistency without strategy = noise.'" }
+      ]
     },
     {
       "id": "b003-14",
@@ -153,7 +297,25 @@
       "duration": "50-65 sec",
       "batch": "003",
       "status": "new",
-      "postUrl": null
+      "postUrl": null,
+      "topic": "Depth over breadth — mastering one platform beats mediocrity on five.",
+      "script": [
+        { "label": "HOOK", "type": "hook", "text": "Stop trying to be on every platform. There is one that's right for your business. Here's how to know which one." },
+        { "label": "BODY 1", "type": "body", "text": "You're posting on TikTok, Instagram, Facebook, LinkedIn, and YouTube. Mediocre results on all of them. Because you're spread too thin. Your content is diluted. Your energy is split. You're playing five games at 50% instead of one game at 100%." },
+        { "label": "REHOOK", "type": "rehook", "text": "Here's the thing..." },
+        { "label": "BODY 2", "type": "body", "text": "Pick the platform where your buyer already is. B2B services? LinkedIn. Consumer-facing brand? Instagram or TikTok. Education and tutorials? YouTube. Find out where your ideal client is scrolling at 10pm. Go there. Master it. Own it. One platform, completely dominated, will get you more clients than five platforms you half-ass." },
+        { "label": "BODY 3", "type": "body", "text": "The goal is not to be everywhere. The goal is to be undeniable somewhere. Depth beats breadth. Always has. Always will." },
+        { "label": "OUTRO", "type": "body", "text": "If you want help finding your platform and building a content system around it — that's exactly what I do. Link in bio." }
+      ],
+      "value": "Gives clarity and permission to focus. Removes overwhelm. Provides a simple framework to pick the right platform.",
+      "cta": "One platform. 100%.",
+      "caption": "You don't need to be on every platform. You need to own one. 🎯\n\nWhich platform is your main focus right now? Drop it below — I'll tell you if it's the right call for your business.",
+      "hashtags": "#socialmediamarketing #contentcreation #marketingstrategy #brandingwithshota #smallbusiness #instagramtips #contentcreator #socialmediatips #businessstrategy #digitalmarketing",
+      "visuals": [
+        { "icon": "🖥️", "text": "Text overlay cycles through platform logos: TikTok → Instagram → Facebook → LinkedIn → YouTube → then holds on a single arrow: '→ ONE.'" },
+        { "icon": "🎯", "text": "Shota at desk, authoritative setup. Calm, clear delivery." },
+        { "icon": "💡", "text": "Clean, minimal. Feels like a revelation." }
+      ]
     },
     {
       "id": "b003-15",
@@ -164,7 +326,25 @@
       "duration": "60-75 sec",
       "batch": "003",
       "status": "new",
-      "postUrl": null
+      "postUrl": null,
+      "topic": "Scripting a realtor using the 'expose the secret' format — giving buyers insider negotiation knowledge.",
+      "script": [
+        { "label": "HOOK", "type": "hook", "text": "Realtors are spending thousands on Zillow leads. I'm about to write one a script that brings them in for free." },
+        { "label": "BODY 1", "type": "body", "text": "Real estate agents are some of the most over-marketed, under-differentiated professionals in any city. They all post the same thing — listing photos, sold signs, and market updates nobody asked for. Meanwhile, their buyers and sellers are on Instagram asking questions that nobody is answering." },
+        { "label": "REHOOK", "type": "rehook", "text": "Here's the thing..." },
+        { "label": "BODY 2", "type": "body", "text": "Here's the script. Hook: 'Your real estate agent is lying to you — and it's costing you $30,000.'\n\nBody: 'Most buyers don't negotiate because their agent doesn't want the deal to fall through. So they push you to accept the first counter. I'm going to tell you exactly how to negotiate closing costs, inspection credits, and the final price — so you keep that money in your pocket.'\n\nCTA: 'Comment NEGOTIATE and I'll send you my buyer negotiation script.'\n\nThat post gets saved. That post gets shared. That post books showings. Not a Zillow ad. A 60-second video." },
+        { "label": "BODY 3", "type": "body", "text": "That's what content can do when it gives people something they actually needed to know. Not a sold sign. Not a market update. A secret they didn't know they were missing." },
+        { "label": "OUTRO", "type": "body", "text": "If you're a realtor and you want a full content system built around your market — link's in bio. And comment your industry below — you might be next." }
+      ],
+      "value": "Shows realtors (and their potential clients) how expert knowledge + content beats paid ads. Demonstrates the 'expose the secret' format in real estate.",
+      "cta": "Content that earns trust → books clients.",
+      "caption": "Real estate agents: stop posting sold signs. Start posting answers to the questions your buyers are Googling at 11pm. 🏠\n\nWhich industry do you want me to script next? Drop it below — I read every one.",
+      "hashtags": "#realestate #realestatetips #realestateagent #contentmarketing #brandingwithshota #scriptthis #socialmediamarketing #realestatemarketing #realtorsofinstagram #smallbusiness",
+      "visuals": [
+        { "icon": "🎭", "text": "Shota delivers the embedded script in character — becomes the realtor's voice, then snaps back to himself" },
+        { "icon": "📱", "text": "The embedded script text appears on screen as he speaks it" },
+        { "icon": "✂️", "text": "Fast cuts during the embedded script. Return to calm, confident Shota for outro." }
+      ]
     }
   ]
 }
