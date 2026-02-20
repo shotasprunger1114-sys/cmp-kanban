@@ -1,0 +1,170 @@
+{
+  "lastUpdated": "2026-02-20T04:00:00-05:00",
+  "scripts": [
+    {
+      "id": "b001-01",
+      "title": "Never Paid Myself",
+      "project": "brandingwithshota",
+      "pillar": "Build in Public",
+      "hook": "I've built a quarter-million dollar business and I've never paid myself a single dollar.",
+      "duration": "45-60 sec",
+      "batch": "001",
+      "status": "filmed",
+      "postUrl": null
+    },
+    {
+      "id": "b001-02",
+      "title": "2 Seconds to Hook",
+      "project": "brandingwithshota",
+      "pillar": "The System",
+      "hook": "Your hook has 2 seconds to work. And yours isn't working. Here's why.",
+      "duration": "50-70 sec",
+      "batch": "001",
+      "status": "filmed",
+      "postUrl": null
+    },
+    {
+      "id": "b001-03",
+      "title": "The Math on Content",
+      "project": "brandingwithshota",
+      "pillar": "The Business Case",
+      "hook": "How much is one new customer worth to your business?",
+      "duration": "45-60 sec",
+      "batch": "001",
+      "status": "filmed",
+      "postUrl": null
+    },
+    {
+      "id": "b001-04",
+      "title": "Fire Your ChatGPT Agency",
+      "project": "brandingwithshota",
+      "pillar": "Hot Takes",
+      "hook": "If your social media agency is using ChatGPT to write all your scripts — fire them. Today.",
+      "duration": "50-65 sec",
+      "batch": "001",
+      "status": "filmed",
+      "postUrl": null
+    },
+    {
+      "id": "b001-05",
+      "title": "Script This: Plumber",
+      "project": "brandingwithshota",
+      "pillar": "Signature Series",
+      "hook": "Someone told me plumbing is the most boring business to make content for.",
+      "duration": "55-75 sec",
+      "batch": "001",
+      "status": "filmed",
+      "postUrl": null
+    },
+    {
+      "id": "b002-06",
+      "title": "Script This: Med Spa",
+      "project": "brandingwithshota",
+      "pillar": "Signature Series",
+      "hook": "Med spas spend $5,000 a month on ads. I'm about to write them a script for free that'll outperform all of it.",
+      "duration": "55-75 sec",
+      "batch": "002",
+      "status": "new",
+      "postUrl": null
+    },
+    {
+      "id": "b002-07",
+      "title": "Script This: Attorney",
+      "project": "brandingwithshota",
+      "pillar": "Signature Series",
+      "hook": "Lawyers think they can't go viral. I wrote a personal injury attorney a script in under a minute that would get more leads than a billboard.",
+      "duration": "55-75 sec",
+      "batch": "002",
+      "status": "new",
+      "postUrl": null
+    },
+    {
+      "id": "b002-08",
+      "title": "The Script Template",
+      "project": "brandingwithshota",
+      "pillar": "The System",
+      "hook": "I'm about to give you the exact script template I use for every single client. Screenshot this.",
+      "duration": "60-80 sec",
+      "batch": "002",
+      "status": "new",
+      "postUrl": null
+    },
+    {
+      "id": "b002-09",
+      "title": "Why Your Content Feels Off",
+      "project": "brandingwithshota",
+      "pillar": "The System",
+      "hook": "You're posting consistently, getting decent views, but no one's reaching out. Here's why.",
+      "duration": "45-60 sec",
+      "batch": "002",
+      "status": "new",
+      "postUrl": null
+    },
+    {
+      "id": "b002-10",
+      "title": "I'll Script Your Business in 60 Seconds",
+      "project": "brandingwithshota",
+      "pillar": "Signature Series",
+      "hook": "Comment your business and I'll write you a viral script in 60 seconds. Let's go.",
+      "duration": "60-80 sec",
+      "batch": "002",
+      "status": "new",
+      "postUrl": null
+    },
+    {
+      "id": "b003-11",
+      "title": "The Vanity Metric Trap",
+      "project": "brandingwithshota",
+      "pillar": "The System",
+      "hook": "If your content is getting 10,000 views and you still have no clients — it's not the algorithm. You're measuring the wrong thing.",
+      "duration": "50-65 sec",
+      "batch": "003",
+      "status": "new",
+      "postUrl": null
+    },
+    {
+      "id": "b003-12",
+      "title": "200 Followers, More Clients Than a 20K Account",
+      "project": "brandingwithshota",
+      "pillar": "Build in Public",
+      "hook": "I know creators with 20,000 followers who can't get a client. And a business with 200 followers that's fully booked. Here's the difference.",
+      "duration": "55-70 sec",
+      "batch": "003",
+      "status": "new",
+      "postUrl": null
+    },
+    {
+      "id": "b003-13",
+      "title": "\"Posting Consistently\" Is the Worst Advice on the Internet",
+      "project": "brandingwithshota",
+      "pillar": "Hot Takes",
+      "hook": "Posting consistently is the worst advice anyone ever gave a business owner. And every marketing guru says it.",
+      "duration": "45-60 sec",
+      "batch": "003",
+      "status": "new",
+      "postUrl": null
+    },
+    {
+      "id": "b003-14",
+      "title": "The One-Platform Rule",
+      "project": "brandingwithshota",
+      "pillar": "The System",
+      "hook": "Stop trying to be on every platform. There is one that's right for your business. Here's how to know which one.",
+      "duration": "50-65 sec",
+      "batch": "003",
+      "status": "new",
+      "postUrl": null
+    },
+    {
+      "id": "b003-15",
+      "title": "Script This: Real Estate Agent",
+      "project": "brandingwithshota",
+      "pillar": "Business Case",
+      "hook": "Realtors are spending thousands on Zillow leads. I'm about to write one a script that brings them in for free.",
+      "duration": "60-75 sec",
+      "batch": "003",
+      "status": "new",
+      "postUrl": null
+    }
+  ]
+}

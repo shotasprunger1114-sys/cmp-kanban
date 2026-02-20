@@ -1011,10 +1011,41 @@ async function fetchLiveStats() {
   } catch(e) { /* fail silently, use hardcoded fallback */ }
 }
 
-loadState();
-renderProjects();
-render();
-fetchLiveStats();
+async function init() {
+  loadState();
+  renderProjects();
+  render();
+  fetchLiveStats();
+  // Sync new scripts from pipeline.json in GitHub repo (auto-updates when nightly pipeline runs)
+  try {
+    const res = await fetch('https://shotasprunger1114-sys.github.io/cmp-kanban/pipeline.json?t=' + Date.now());
+    if (res.ok) {
+      const pipeline = await res.json();
+      const existingIds = new Set(scripts.map(s => s.id));
+      let changed = false;
+      const savedRaw = localStorage.getItem(STORAGE_KEY);
+      const savedMap = {};
+      if (savedRaw) {
+        try { JSON.parse(savedRaw).scripts.forEach(s => savedMap[s.id] = s); } catch(e) {}
+      }
+      pipeline.scripts.forEach(p => {
+        if (!existingIds.has(p.id)) {
+          scripts.push({
+            id: p.id, title: p.title, project: p.project || 'brandingwithshota',
+            pillar: p.pillar, duration: p.duration || '60s', batch: p.batch,
+            status: savedMap[p.id] ? savedMap[p.id].status : (p.status || 'new'),
+            topic: p.topic || '', hook: p.hook,
+            script: [{ label: 'HOOK', type: 'hook', text: p.hook }],
+            value: '', cta: '', caption: '', hashtags: '', visuals: []
+          });
+          changed = true;
+        }
+      });
+      if (changed) { renderProjects(); render(); }
+    }
+  } catch(e) { console.log('Pipeline sync skipped (offline or not yet pushed):', e); }
+}
+init();
 </script>
 </body>
 </html>
