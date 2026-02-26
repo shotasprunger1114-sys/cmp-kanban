@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-23T23:00:00-05:00",
+  "lastUpdated": "2026-02-25T23:00:00-05:00",
   "scripts": [
     {
       "id": "b001-01",
@@ -615,6 +615,61 @@
         { "icon": "✂️", "text": "Snap back to confident Shota for Body 3 — the contrast between patient-facing script and business lesson" },
         { "icon": "💡", "text": "Clean, direct setup — no distracting background elements" }
       ]
+    },
+    {
+      "id": "b006-26",
+      "title": "The DM That Closed the Deal",
+      "project": "brandingwithshota",
+      "pillar": "The System",
+      "hook": "Most people don't know what to say when someone DMs them after a video. So the conversation dies. Here's the 3-message sequence that turns 'I love your content' into a paid client.",
+      "duration": "55-70 sec",
+      "batch": "006",
+      "status": "new",
+      "postUrl": null
+    },
+    {
+      "id": "b006-27",
+      "title": "Script This: Chiropractor",
+      "project": "brandingwithshota",
+      "pillar": "Business Case",
+      "hook": "Chiropractors have some of the most powerful content potential of any business — and almost none of them are using it. I wrote one a script that books new patients without a single ad dollar spent.",
+      "duration": "60-75 sec",
+      "batch": "006",
+      "status": "new",
+      "postUrl": null
+    },
+    {
+      "id": "b006-28",
+      "title": "I Raised My Prices and Got More Clients",
+      "project": "brandingwithshota",
+      "pillar": "Build in Public",
+      "hook": "I raised my prices by 40% last year. And then I signed more clients in the following 60 days than I had in the 6 months before that. Here's what actually happened.",
+      "duration": "55-70 sec",
+      "batch": "006",
+      "status": "new",
+      "postUrl": null
+    },
+    {
+      "id": "b006-29",
+      "title": "The Content ROI Nobody Tracks",
+      "project": "brandingwithshota",
+      "pillar": "Hot Takes",
+      "hook": "Every business owner tracking their content ROI is measuring the wrong thing. And their social media manager is letting them.",
+      "duration": "50-65 sec",
+      "batch": "006",
+      "status": "new",
+      "postUrl": null
+    },
+    {
+      "id": "b006-30",
+      "title": "Your Niche Isn't Too Small — It's Too Vague",
+      "project": "brandingwithshota",
+      "pillar": "The System",
+      "hook": "Your niche isn't too small. It's too vague. And that's why the right people are watching your content and not calling you.",
+      "duration": "55-70 sec",
+      "batch": "006",
+      "status": "new",
+      "postUrl": null
     },
     {
       "id": "b005-25",
