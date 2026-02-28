@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-25T23:00:00-05:00",
+  "lastUpdated": "2026-02-27T23:00:00-05:00",
   "scripts": [
     {
       "id": "b001-01",
@@ -668,6 +668,61 @@
       "hook": "Your niche isn't too small. It's too vague. And that's why the right people are watching your content and not calling you.",
       "duration": "55-70 sec",
       "batch": "006",
+      "status": "new",
+      "postUrl": null
+    },
+    {
+      "id": "b007-31",
+      "title": "The Watch Time Myth",
+      "project": "brandingwithshota",
+      "pillar": "The System",
+      "hook": "Instagram doesn't care how many views your reel gets. It cares about one number you're probably not checking.",
+      "duration": "55-70 sec",
+      "batch": "007",
+      "status": "new",
+      "postUrl": null
+    },
+    {
+      "id": "b007-32",
+      "title": "Your Content Should Make Some People Uncomfortable",
+      "project": "brandingwithshota",
+      "pillar": "Hot Takes",
+      "hook": "If nobody disagrees with your content, you don't have a point of view. You have wallpaper.",
+      "duration": "45-60 sec",
+      "batch": "007",
+      "status": "new",
+      "postUrl": null
+    },
+    {
+      "id": "b007-33",
+      "title": "The Month I Almost Quit",
+      "project": "brandingwithshota",
+      "pillar": "Build in Public",
+      "hook": "There was a month last year where I seriously considered shutting down Create More Productions entirely. This is what that looked like.",
+      "duration": "60-70 sec",
+      "batch": "007",
+      "status": "new",
+      "postUrl": null
+    },
+    {
+      "id": "b007-34",
+      "title": "Script This: Financial Advisor",
+      "project": "brandingwithshota",
+      "pillar": "Business Case",
+      "hook": "Financial advisors are some of the most compliance-restricted content creators online. I wrote one a script that gets clients without saying a single word they're not legally allowed to say.",
+      "duration": "65-75 sec",
+      "batch": "007",
+      "status": "new",
+      "postUrl": null
+    },
+    {
+      "id": "b007-35",
+      "title": "The 5-Word Test",
+      "project": "brandingwithshota",
+      "pillar": "The System",
+      "hook": "Before you post any piece of content, run this test on it. If it fails — don't post it.",
+      "duration": "50-65 sec",
+      "batch": "007",
       "status": "new",
       "postUrl": null
     },
