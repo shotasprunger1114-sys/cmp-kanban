@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-27T23:00:00-05:00",
+  "lastUpdated": "2026-03-01T23:15:00-05:00",
   "scripts": [
     {
       "id": "b001-01",
@@ -723,6 +723,61 @@
       "hook": "Before you post any piece of content, run this test on it. If it fails — don't post it.",
       "duration": "50-65 sec",
       "batch": "007",
+      "status": "new",
+      "postUrl": null
+    },
+    {
+      "id": "b008-36",
+      "title": "The Repurposing Trap",
+      "project": "brandingwithshota",
+      "pillar": "The System",
+      "hook": "Everyone is telling you to repurpose your content. Almost everyone doing it — is doing it wrong.",
+      "duration": "55-70 sec",
+      "batch": "008",
+      "status": "new",
+      "postUrl": null
+    },
+    {
+      "id": "b008-37",
+      "title": "You Don't Have a Content Problem. You Have a Positioning Problem.",
+      "project": "brandingwithshota",
+      "pillar": "Hot Takes",
+      "hook": "Your content isn't the problem. Your positioning is. And most people can't tell the difference.",
+      "duration": "50-65 sec",
+      "batch": "008",
+      "status": "new",
+      "postUrl": null
+    },
+    {
+      "id": "b008-38",
+      "title": "The Comment Reply That Books Discovery Calls",
+      "project": "brandingwithshota",
+      "pillar": "The System",
+      "hook": "The way you're replying to comments on Instagram is quietly killing your shot at new clients. Here's the fix.",
+      "duration": "55-70 sec",
+      "batch": "008",
+      "status": "new",
+      "postUrl": null
+    },
+    {
+      "id": "b008-39",
+      "title": "The Client Who Told Me My Framework Was Wrong",
+      "project": "brandingwithshota",
+      "pillar": "Build in Public",
+      "hook": "A client told me my scripting framework was wrong. I almost dismissed him. Then I listened — and changed it.",
+      "duration": "60-70 sec",
+      "batch": "008",
+      "status": "new",
+      "postUrl": null
+    },
+    {
+      "id": "b008-40",
+      "title": "Script This: Landscaper",
+      "project": "brandingwithshota",
+      "pillar": "Business Case",
+      "hook": "A landscaper told me his business was too seasonal to make consistent content. I wrote him a script that books spring contracts — in February.",
+      "duration": "65-75 sec",
+      "batch": "008",
       "status": "new",
       "postUrl": null
     },
