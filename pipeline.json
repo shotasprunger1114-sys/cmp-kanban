@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-03-01T23:15:00-05:00",
+  "lastUpdated": "2026-03-03T23:00:00-05:00",
   "scripts": [
     {
       "id": "b001-01",
@@ -778,6 +778,61 @@
       "hook": "A landscaper told me his business was too seasonal to make consistent content. I wrote him a script that books spring contracts — in February.",
       "duration": "65-75 sec",
       "batch": "008",
+      "status": "new",
+      "postUrl": null
+    },
+    {
+      "id": "b009-41",
+      "title": "The 90-Day Content Audit",
+      "project": "brandingwithshota",
+      "pillar": "The System",
+      "hook": "Every 90 days, I run my clients through a content audit. Most of them find out they've been wasting 60% of their time. Here's the exact process.",
+      "duration": "60-70 sec",
+      "batch": "009",
+      "status": "new",
+      "postUrl": null
+    },
+    {
+      "id": "b009-42",
+      "title": "I Said No to a $5K Client",
+      "project": "brandingwithshota",
+      "pillar": "Build in Public",
+      "hook": "I turned down a $5,000-a-month client last year. And it was one of the best business decisions I've ever made.",
+      "duration": "55-70 sec",
+      "batch": "009",
+      "status": "new",
+      "postUrl": null
+    },
+    {
+      "id": "b009-43",
+      "title": "Script This: Insurance Agent",
+      "project": "brandingwithshota",
+      "pillar": "Business Case",
+      "hook": "Insurance agents think they have the hardest content problem in any industry. Too regulated. Too dry. Too much fine print. I wrote one a script that had 12 people DM him in 48 hours.",
+      "duration": "60-75 sec",
+      "batch": "009",
+      "status": "new",
+      "postUrl": null
+    },
+    {
+      "id": "b009-44",
+      "title": "Every Content Coach Telling You to Just Show Up Has Never Missed Payroll",
+      "project": "brandingwithshota",
+      "pillar": "Hot Takes",
+      "hook": "Every content coach telling you to 'just show up every day' has never had a business to run. I'm calling it.",
+      "duration": "50-65 sec",
+      "batch": "009",
+      "status": "new",
+      "postUrl": null
+    },
+    {
+      "id": "b009-45",
+      "title": "The 3 Hook Formulas That Work for Any Business",
+      "project": "brandingwithshota",
+      "pillar": "The System",
+      "hook": "There are only 3 hook formulas that consistently work for service businesses on Instagram. After scripting 40+ clients — here they are.",
+      "duration": "65-75 sec",
+      "batch": "009",
       "status": "new",
       "postUrl": null
     },
