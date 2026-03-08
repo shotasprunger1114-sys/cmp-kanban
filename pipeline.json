@@ -2092,5 +2092,335 @@
         "text": "Clean cuts. Each video type gets its own beat. Don't rush the list — let each one land."
       }
     ]
+  },
+  {
+    "id": "b011-51",
+    "title": "The $75 Car Detailer",
+    "project": "brandingwithshota",
+    "pillar": "Build in Public",
+    "hook": "The first client I ever signed at Create More Productions was a car detailer. I charged him $75. And that invoice is the reason this company exists.",
+    "duration": "55-65 sec",
+    "batch": "011",
+    "status": "new",
+    "postUrl": null,
+    "topic": "The real story of CMP's first client — a $75 car detailing job that proved the scripting system worked and gave Shota the confidence to build.",
+    "script": [
+      {
+        "label": "HOOK",
+        "type": "hook",
+        "text": "The first client I ever signed at Create More Productions was a car detailer. I charged him $75. And that invoice is the reason this company exists."
+      },
+      {
+        "label": "BODY 1",
+        "type": "body",
+        "text": "When I launched CMP solo, I had no clients, no case studies, no social proof of any kind. Just a framework I'd built and a belief that it worked. I was pitching to anyone who would talk to me. And the first person who said yes ran a one-man car detailing operation out of his garage.\n\nSeventy-five dollars. That was the invoice. Not because that's what content work is worth — because that's all he had. And I took it anyway. Because I needed one thing more than I needed money."
+      },
+      {
+        "label": "REHOOK",
+        "type": "rehook",
+        "text": "Here's the thing..."
+      },
+      {
+        "label": "BODY 2",
+        "type": "body",
+        "text": "I needed proof. Not proof for clients — proof for myself. That I could do this. That the system worked. That if I built the right content for someone, it would actually bring them business.\n\nSo I scripted his first video. We filmed it on his phone, at his house, with a car in the driveway. We focused it entirely on one fear: that a detailer would scratch or ruin your paint if you chose the wrong one. That video brought him his first three clients from Instagram.\n\nThat's when I knew. The system worked. The $75 didn't matter. The proof did."
+      },
+      {
+        "label": "BODY 3",
+        "type": "body",
+        "text": "A lot of people wait to launch until they can charge premium rates. I think that's backwards. Your first client isn't supposed to make you rich. They're supposed to make you real. You're not buying their business — they're buying your confidence."
+      },
+      {
+        "label": "OUTRO",
+        "type": "outro",
+        "text": "Now every CMP client gets that same system — just refined by the 40+ businesses that came after that car detailer. If you're waiting until you're ready to launch — you're already ready. The first client doesn't need to be a big one. They just need to exist."
+      }
+    ],
+    "value": "Origin story that validates starting small. Gives permission to take the \"too small\" first client. Builds deep trust through the specific detail ($75) and real outcome (3 clients from one video).",
+    "cta": "Your first client isn't supposed to make you rich. They're supposed to make you real.",
+    "caption": "The first client I ever signed at CMP was a car detailer.\n\nI charged him $75.\n\nNot because that's what the work was worth.\nBecause that's all he had.\nAnd I needed something more than money — I needed proof.\n\nSo I scripted his first video.\nPhone camera. His driveway. A car.\n\nOne hook: \"What happens to your car if you choose the wrong detailer?\"\n\nThat video brought him 3 new clients from Instagram.\n\nAnd that's when I knew the system worked.\n\n$75 invoice. That's where Create More Productions actually started.\n\nYour first client doesn't need to be a big one.\nThey just need to exist. 🔧",
+    "hashtags": "#buildinpublic #brandingwithshota #createmorepro #firstclient #smallbusiness #entrepreneurship #contentmarketing #socialmediamarketing #agencylife #businessgrowth",
+    "visuals": [
+      {
+        "icon": "🚶",
+        "text": "Walking-and-talking OR casual, no-studio setup — this is a raw Build in Public story"
+      },
+      {
+        "icon": "📱",
+        "text": "Optional: hold up phone briefly as if it's the original video — \"filmed on his phone\""
+      },
+      {
+        "icon": "💬",
+        "text": "Slow way down on \"$75\" — that specific number is the emotional anchor"
+      },
+      {
+        "icon": "✂️",
+        "text": "Reflective energy, not nostalgic — you're sharing a lesson, not bragging"
+      }
+    ]
+  },
+  {
+    "id": "b011-52",
+    "title": "The 10-Second Profile Test",
+    "project": "brandingwithshota",
+    "pillar": "The System",
+    "hook": "Every reel you post sends people to your profile. And most of them decide in 10 seconds whether to follow you — or leave. Your profile is failing that test. Here's exactly why.",
+    "duration": "55-70 sec",
+    "batch": "011",
+    "status": "new",
+    "postUrl": null,
+    "topic": "The 3-part profile optimization framework that converts reel viewers into followers and DMs — bio precision, pinned proof, and objection-answering highlights.",
+    "script": [
+      {
+        "label": "HOOK",
+        "type": "hook",
+        "text": "Every reel you post sends people to your profile. And most of them decide in 10 seconds whether to follow you — or leave. Your profile is failing that test. Here's exactly why."
+      },
+      {
+        "label": "BODY 1",
+        "type": "body",
+        "text": "Here's the sequence. Someone watches your reel. It stops them mid-scroll. They're curious. They tap your name. Your profile loads. And in the next 10 seconds, they decide — is this person worth following? Is this someone I should DM?\n\nMost business accounts lose that visitor in under five seconds. Not because the reel was bad. Because the profile has no answer to the question every first-time visitor has: what do I get if I stay?"
+      },
+      {
+        "label": "REHOOK",
+        "type": "rehook",
+        "text": "Here's the thing — the reel is the ad. The profile is the landing page. And your landing page is broken."
+      },
+      {
+        "label": "BODY 2",
+        "type": "body",
+        "text": "Run this test on your profile right now. Cover your name and username. Look at what's left.\n\nDoes your bio tell someone their specific problem in one line? Or is it \"Content creator | Helping brands grow 🚀\"?\n\nDoes your pinned post immediately prove you understand their world? Or is it your most recent video?\n\nDoes your highlights section answer the question \"why should I trust you?\" Or is it a collection of random stories that never got deleted?\n\nThree things. Bio precision. Pinned proof. Highlights that answer objections. If any of those are missing — the profile is leaking leads. Every single day. From every reel that's actually working."
+      },
+      {
+        "label": "BODY 3",
+        "type": "body",
+        "text": "Here's the truth: you can have the best reel strategy in your category and lose every lead because your profile doesn't confirm what the reel promised. The reel opens the door. The profile either closes the deal — or closes the door."
+      },
+      {
+        "label": "OUTRO",
+        "type": "outro",
+        "text": "Fix your bio. Pin your best proof video. Build highlights that answer the top 3 questions your buyer has before they DM. That's the whole system. Do that this weekend. Then every reel you post starts actually converting."
+      }
+    ],
+    "value": "Solves the exact frustration of getting reel views but no followers or DMs. Highly actionable — they can fix all 3 things today. Screenshot/save-bait.",
+    "cta": "The reel is the ad. The profile is the landing page. Fix the landing page.",
+    "caption": "Your reels are getting views.\nNobody's following. Nobody's DMing.\n\nHere's why:\n\nYour profile is failing the 10-second test.\n\nWhen someone taps your name after watching a reel, they make a decision in under 10 seconds:\n\n\"Is this person worth following?\"\n\nMost business profiles answer: 🤷\n\nFix these 3 things this weekend:\n\n1️⃣ Bio — does it name their specific problem in one line? Or is it \"helping brands grow 🚀\"?\n\n2️⃣ Pinned post — does it immediately prove you understand their world?\n\n3️⃣ Highlights — do they answer the top objections before the DM?\n\nThe reel opens the door.\nThe profile closes the deal — or closes the door.\n\nFix the landing page. 👇",
+    "hashtags": "#instagramtips #contentcreation #socialmediamarketing #brandingwithshota #instagramgrowth #profileoptimization #smallbusiness #contentcreator #reelsstrategy #marketingtips",
+    "visuals": [
+      {
+        "icon": "🎬",
+        "text": "Open tight to camera, diagnostic energy — you've spotted something they're bleeding from"
+      },
+      {
+        "icon": "📱",
+        "text": "Pull up a phone and point to specific profile sections as you name them — bio, pinned, highlights"
+      },
+      {
+        "icon": "📋",
+        "text": "Text overlay: \"Bio → Pinned → Highlights\" appears as you name each one"
+      },
+      {
+        "icon": "✅",
+        "text": "End frame: the 3-step checklist on screen — screenshot prompt built in"
+      }
+    ]
+  },
+  {
+    "id": "b011-53",
+    "title": "Your Testimonials Are Costing You Clients",
+    "project": "brandingwithshota",
+    "pillar": "Hot Takes",
+    "hook": "The testimonials you're collecting are costing you clients. And you think they're helping you close deals. Here's the problem.",
+    "duration": "50-65 sec",
+    "batch": "011",
+    "status": "new",
+    "postUrl": null,
+    "topic": "Hot take exposing the generic testimonial format that plagues service businesses — and the specific before/after structure that actually converts prospects.",
+    "script": [
+      {
+        "label": "HOOK",
+        "type": "hook",
+        "text": "The testimonials you're collecting are costing you clients. And you think they're helping you close deals. Here's the problem."
+      },
+      {
+        "label": "BODY 1",
+        "type": "body",
+        "text": "\"Great work, highly recommend.\" \"Professional and easy to work with.\" \"Very happy with the results.\"\n\nThat's what most service business testimonials look like. Generic. Interchangeable. The same five words any business in your category is also collecting. Here's what that does to a prospect reading them: absolutely nothing. Because a testimonial that could apply to anyone — proves nothing about anyone. It doesn't build trust. It just fills space."
+      },
+      {
+        "label": "REHOOK",
+        "type": "rehook",
+        "text": "Here's the thing..."
+      },
+      {
+        "label": "BODY 2",
+        "type": "body",
+        "text": "A great testimonial isn't about how pleasant it was to work with you. It's about the specific transformation. Before → decision → after. With real details.\n\nNot: \"Great work, highly recommend.\"\nBut: \"We went from posting randomly with zero DMs to a content system that books us 2-3 consultations a week. Shota identified the exact reason our content wasn't converting — and fixed it in the first month.\"\n\nSee the difference? The second one has a before. A specific problem named. A specific outcome. A timeframe. Now when a prospect with the same problem reads that — they think: that's my situation. That person got results. I should call.\n\nThe generic version? Scrolled past. Every time."
+      },
+      {
+        "label": "BODY 3",
+        "type": "body",
+        "text": "Your testimonials should be so specific that the wrong client reads them and self-selects out. And the right client reads them and DMs you before they even check your prices. That's what a testimonial should do. Not decorate your website — qualify your leads."
+      },
+      {
+        "label": "OUTRO",
+        "type": "outro",
+        "text": "Go find your three best testimonials. If none of them describe a specific before and after — go back to those clients and ask them one question: \"What was your situation before we worked together, and what changed?\" That answer is your testimonial. Request it today."
+      }
+    ],
+    "value": "Highly shareable — every service business owner with a website full of \"great work, highly recommend!\" will feel called out. Actionable fix builds immediate goodwill.",
+    "cta": "Generic testimonials prove nothing. Specific transformations close deals.",
+    "caption": "Hot take: your testimonials are costing you clients.\n\n\"Great work, highly recommend.\"\n\"Professional and easy to work with.\"\n\"Very happy with the results.\"\n\nThat's what most testimonials look like.\nAnd they prove absolutely nothing.\n\nA testimonial that could apply to anyone → proves nothing about anyone.\n\nWhat actually closes deals:\n\n❌ \"Great work, highly recommend.\"\n✅ \"We went from zero DMs to booking 2-3 consultations a week. Shota identified exactly why our content wasn't converting — and fixed it month one.\"\n\nBefore. Specific problem. Specific outcome. Timeframe.\n\nNow the right prospect reads that and thinks:\n\"That's my situation. I need to call.\"\n\nGo find your 3 best testimonials.\nIf none describe a specific before/after — go ask for one today.\n\nFight me in the comments. ⬇️",
+    "hashtags": "#hottake #socialmediamarketing #brandingwithshota #smallbusiness #contentmarketing #testimonials #servicebasedbusiness #marketingtips #businessgrowth #contentcreation",
+    "visuals": [
+      {
+        "icon": "🎯",
+        "text": "Lean in slightly — calm, confident, a little amused. You've seen this mistake a thousand times."
+      },
+      {
+        "icon": "📋",
+        "text": "Text overlay at hook: the generic testimonial quote in quotes → then a big ❌"
+      },
+      {
+        "icon": "⚡",
+        "text": "Fast delivery when listing bad examples — punch the absurdity of how identical they are"
+      },
+      {
+        "icon": "💬",
+        "text": "Slow down on the GOOD example — let the before/after structure land visually and verbally"
+      }
+    ]
+  },
+  {
+    "id": "b011-54",
+    "title": "Script This: General Contractor",
+    "project": "brandingwithshota",
+    "pillar": "Business Case",
+    "hook": "General contractors are some of the most in-demand service businesses in America — and some of the worst at content. I wrote one a script that booked him four estimates in a week without spending a dollar on ads.",
+    "duration": "65-75 sec",
+    "batch": "011",
+    "status": "new",
+    "postUrl": null,
+    "topic": "Scripting a general contractor using the \"protect the homeowner\" trust format — giving away a pre-hire checklist that builds authority before any estimate is booked.",
+    "script": [
+      {
+        "label": "HOOK",
+        "type": "hook",
+        "text": "General contractors are some of the most in-demand service businesses in America — and some of the worst at content. I wrote one a script that booked him four estimates in a week without spending a dollar on ads."
+      },
+      {
+        "label": "BODY 1",
+        "type": "body",
+        "text": "Here's what GC content looks like right now. A photo of a finished kitchen. \"Check out this bathroom remodel we just completed!\" A time-lapse of framing going up. Nice to look at. Zero calls. Because finished project photos are the contractor's version of the before-and-after with no story. You're showing the output without the emotion. Nobody hires a contractor to see pretty pictures — they hire because they're scared of choosing the wrong one. That fear is your content."
+      },
+      {
+        "label": "REHOOK",
+        "type": "rehook",
+        "text": "Here's the script I wrote him—"
+      },
+      {
+        "label": "BODY 2",
+        "type": "body",
+        "text": "Hook: \"The question every homeowner should ask a contractor before signing anything — and most don't.\"\n\nBody: \"I've seen it too many times. A homeowner hires a GC based on price alone. No contract terms. No payment schedule tied to milestones. No clear timeline in writing. Four months in, the project is stalled, the contractor is MIA, and there's nothing to enforce because nothing was documented. Here's the one document you need before any work starts — and what should be in it. If a contractor won't provide this — walk away.\" Then you show the document. Or you offer to send it.\n\nThat post? Homeowners share it with their spouse. Their parents. Their neighbors who are about to renovate. The contractor who posted it becomes the trusted expert before a single estimate is booked."
+      },
+      {
+        "label": "BODY 3",
+        "type": "body",
+        "text": "You're not selling renovations. You're selling protection from the horror story every homeowner has heard. Name the fear. Give them the tool that prevents it. And then every person who downloads that document remembers exactly who gave it to them when they're ready to hire."
+      },
+      {
+        "label": "OUTRO",
+        "type": "outro",
+        "text": "If you're a contractor and your social media is just project photos — you're doing the hard work and leaving the leads on the table. Drop your trade below — I'll tell you what the fear-based hook looks like for your specific business."
+      }
+    ],
+    "value": "Expands Script This to the massive contractor/home improvement market. Proves the fear-based trust format works in trades. High save/share from GCs, home service businesses, and homeowners.",
+    "cta": "Show the fear. Give the tool. Earn the call.",
+    "caption": "General contractors: you're doing incredible work.\nAnd leaving all the leads on the table.\n\nFinished kitchen photos ≠ booked estimates.\n\nThe content that actually converts:\n\nHook: \"The question every homeowner should ask a contractor before signing — and most don't.\"\n\nThen you give them the one document that protects them.\nPayment milestones. Scope terms. Timeline in writing.\n\n\"If a contractor won't provide this — walk away.\"\n\nThat post gets shared by every homeowner who's ever been burned.\nAnd every one of them remembers who gave it to them when they're ready to hire.\n\nSell the protection.\nNot the portfolio. 🔨\n\nDrop your trade below — I'll write yours. 👇",
+    "hashtags": "#generalcontractor #contractormarketing #homeimprovement #scriptthis #socialmediamarketing #contentcreation #brandingwithshota #smallbusiness #tradesmarketing #reelsstrategy",
+    "visuals": [
+      {
+        "icon": "🎭",
+        "text": "When delivering the embedded script, shift energy — become the contractor's voice, more protective/advisory tone"
+      },
+      {
+        "icon": "📱",
+        "text": "Text overlay during script: \"The document every homeowner needs\" appears as you describe it"
+      },
+      {
+        "icon": "✂️",
+        "text": "Snap back to confident Shota for BODY 3 — clear energy contrast"
+      },
+      {
+        "icon": "🎬",
+        "text": "Open with slight smirk — you're about to solve a problem nobody's talking about"
+      }
+    ]
+  },
+  {
+    "id": "b011-55",
+    "title": "I Moved to Florida and Barely Ate",
+    "project": "brandingwithshota",
+    "pillar": "Build in Public",
+    "hook": "When I moved to Florida to start Create More Productions, there were weeks where I barely ate. Not because I forgot. Because I was spending every dollar on keeping the business alive instead of feeding myself.",
+    "duration": "60-70 sec",
+    "batch": "011",
+    "status": "new",
+    "postUrl": null,
+    "topic": "The raw, unposted story of building CMP's early days — moving to Florida alone with minimal resources, barely eating, and pushing through before any results came. The season before success.",
+    "script": [
+      {
+        "label": "HOOK",
+        "type": "hook",
+        "text": "When I moved to Florida to start Create More Productions, there were weeks where I barely ate. Not because I forgot. Because I was spending every dollar on keeping the business alive instead of feeding myself."
+      },
+      {
+        "label": "BODY 1",
+        "type": "body",
+        "text": "I had left a job. Moved to a new city. Knew almost no one. And I was building an agency from scratch with no clients, no retainers, no income coming in. I had enough saved to survive for a few months if I was careful. So I was careful. Groceries became a luxury I planned around. I wasn't telling anyone this was happening. I just... kept working. Because the only thing I was sure of was that if I stopped, nothing would happen. And if I kept going, something might."
+      },
+      {
+        "label": "REHOOK",
+        "type": "rehook",
+        "text": "Here's the thing..."
+      },
+      {
+        "label": "BODY 2",
+        "type": "body",
+        "text": "People see Create More Productions now — a team, clients, a system, content. They don't see the version of me eating ramen in an apartment I could barely afford, refreshing my email waiting for someone to reply to a pitch.\n\nNobody shows that part. Because it's embarrassing. Because it doesn't make a clean \"entrepreneurship success story.\" But that part IS the story. The part before the results — that's where you find out if you actually believe in what you're building. Not when it's working. When it's not. And you do it anyway.\n\nI kept going not because I was confident it would work. Because I couldn't imagine doing anything else."
+      },
+      {
+        "label": "BODY 3",
+        "type": "body",
+        "text": "If you're in that season right now — the one where it's not working yet, where nobody knows your name, where you're eating less so the business can breathe — this isn't failure. This is the build. The part that doesn't get posted. The part that actually matters."
+      },
+      {
+        "label": "OUTRO",
+        "type": "outro",
+        "text": "Nobody tells you this before you start. So I'm telling you now. The season before it works is supposed to be hard. It's supposed to test you. It's not a sign you're doing it wrong. It's a sign you're doing it real. Keep building."
+      }
+    ],
+    "value": "Deep emotional resonance for any entrepreneur in the \"before\" phase. Content that gets saved, shared, and screenshotted. Builds the kind of trust no tips content can replicate. Will generate heartfelt comments.",
+    "cta": "The season before it works is supposed to be hard. Keep building.",
+    "caption": "When I moved to Florida to start CMP, there were weeks where I barely ate.\n\nNot because I forgot.\nBecause every dollar was going toward keeping the business alive.\n\nI had no clients. No retainers.\nNew city. Knew almost nobody.\n\nI was refreshing my email at 11pm hoping someone replied to a pitch.\n\nNobody saw that part.\nI didn't post it. It wasn't a clean story yet.\n\nBut here's what I know now:\nThat season — the one before it works —\nthat's where you find out if you actually believe in what you're building.\n\nNot when things are moving.\nWhen they're not. And you do it anyway.\n\nIf you're in that season right now:\neating less, spending every dollar, telling nobody how hard it is —\n\nThis isn't failure.\nThis is the build.\n\nKeep going. 🏗️",
+    "hashtags": "#buildinpublic #brandingwithshota #createmorepro #entrepreneurship #smallbusiness #agencylife #businessgrowth #realtalk #founderlife #startingfromscratch",
+    "visuals": [
+      {
+        "icon": "🎤",
+        "text": "Seated, casual — most vulnerable energy of any video. No performance. Just honesty."
+      },
+      {
+        "icon": "💬",
+        "text": "Slow down on \"barely ate\" — don't rush past the weight of that detail"
+      },
+      {
+        "icon": "📱",
+        "text": "No text overlays needed in body — let the story carry it. Simple on-screen text only at hook."
+      },
+      {
+        "icon": "✂️",
+        "text": "Natural, unhurried cuts — this is not a punchy tips video. Let it breathe."
+      }
+    ]
   }
 ]
