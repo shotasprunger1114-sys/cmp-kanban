@@ -1,15 +1,15 @@
 {
-  "lastUpdated": "2026-05-18T13:02:00.000Z",
+  "lastUpdated": "2026-06-01T14:02:00.000Z",
   "accounts": {
     "brandingwithshota": {
-      "followers": 62,
-      "followersChange": 10,
+      "followers": 67,
+      "followersChange": 5,
       "posts": 29,
-      "avgReach": 217,
-      "avgReachChange": 1,
-      "engRate": 3.75,
-      "topMetric": "avgReach",
-      "topMetricVal": "217 avg reach (+1 vs last week)"
+      "avgReach": 222,
+      "avgReachChange": 5,
+      "engRate": 3.69,
+      "topMetric": "followers",
+      "topMetricVal": "67 followers (+5 vs last week)"
     }
   }
 }
